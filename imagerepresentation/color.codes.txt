@@ -1,0 +1,4 @@
+0=black=#000000
+1=blue=#0000FF
+2=red=#FF0000
+3=green=#00FF00
