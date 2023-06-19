@@ -12,4 +12,4 @@
 * You can't convert **"** in text to wavery only if you type scrawl
 * You can't convert \ in text to wavery only if you type backslash
 
-**Wait for the next relase to solve the problem ;)**
+**Wait for the next relase to solve the bugs ;)**
