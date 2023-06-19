@@ -8,7 +8,7 @@
 ### WaWeRY to text:
 * You can write several numbers here, but there must be a space after each number
 
-## other bug
+## Other bugs
 * You can't convert **"** in text to wavery only if you type scrawl
 * You can't convert \ in text to wavery only if you type backslash
 
