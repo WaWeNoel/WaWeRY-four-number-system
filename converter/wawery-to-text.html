@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WaWeRY to Character Converter</title>
+    <style>
+        .container {
+            margin: 50px auto;
+            text-align: center;
+        }
+        input {
+            padding: 5px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>WaWeRY to Character Converter</h2>
+        <input type="text" id="numberInput" placeholder="WaWeRY numbers">
+        <button onclick="convertToCharacter()">Convert</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        const conversionTable = {
+            "1100": "Null",   
+            "1101": "SOH",    
+            "1102": "STX",
+            "1103": "ETX",
+            "1110": "BS",
+            "1111": "CAN",
+            "1112": "SUB",
+            "1113": "ESC",
+            "1120": "DEL",
+            "1133": " ",
+            "1121": "!",
+            "1122": "scrawl",
+            "1123": "#",
+            "1130": "$",
+            "1131": "%",
+            "1132": "&",
+            "1133": "'",
+            "1200": "(",
+            "1201": ")",
+            "1202": "*",
+            "1203": "+",
+            "1210": ",",
+            "1211": "-",
+            "1212": ".",
+            "1213": "/",
+            "0000": "0",
+            "0001": "1",
+            "0002": "2",
+            "0003": "3",
+            "0010": "4",
+            "0011": "5",
+            "0012": "6",
+            "0013": "7",
+            "0020": "8",
+            "0021": "9",
+            "0022": ":",
+            "0023": ";",
+            "0030": "<",
+            "0031": "=",
+            "0032": ">",
+            "0033": "?",
+            "0100": "@",
+            "0101": "A",
+            "0102": "B",
+            "0103": "C",
+            "0110": "D",
+            "0111": "E",
+            "0112": "F",
+            "0113": "G",
+            "0120": "H",
+            "0121": "I",
+            "0222": "J",
+            "0223": "K",
+            "0230": "L",
+            "0231": "M",
+            "0232": "N",
+            "0233": "O",
+            "0300": "P",
+            "0301": "Q",
+            "0302": "R",
+            "0303": "S",
+            "0310": "T",
+            "0311": "U",
+            "0312": "V",
+            "0313": "W",
+            "0320": "X",
+            "0321": "Y",
+            "0322": "Z",
+            "0323": "[",
+            "0330": "backslash", 
+            "0331": "]",
+            "0332": "^",
+            "0333": "_",
+            "1000": "`",
+            "1001": "a",
+            "1002": "b",
+            "1003": "c",
+            "1010": "d",
+            "1011": "e",
+            "1012": "f",
+            "1013": "g",
+            "1020": "h",
+            "1021": "i",
+            "1022": "j",
+            "1023": "k",
+            "1030": "l",
+            "1031": "m",
+            "1032": "n",
+            "1033": "o",
+            "1100": "p",
+            "1101": "q",
+            "1102": "r",
+            "1103": "s",
+            "1110": "t",
+            "1111": "u",
+            "1112": "v",
+            "1113": "w",
+            "1120": "x",
+            "1121": "y",
+            "1122": "z",
+            "1123": "{",
+            "1130": "|",
+            "1131": "}",
+            "1132": "~"
+            
+
+            // További konverziós szabályokat itt adhatunk meg
+        };
+
+        function convertToCharacter() {
+            const numberInput = document.getElementById("numberInput").value;
+            const numbers = numberInput.split(" ");
+            let characters = "";
+
+            for (let i = 0; i < numbers.length; i++) {
+                const number = numbers[i];
+                const character = conversionTable[number];
+
+                if (character) {
+                    characters += character;
+                }
+            }
+
+            document.getElementById("result").innerText = "Result: " + characters;
+        }
+    </script>
+	<footer>You can write several numbers here, but there must be a space after each number</footer>
+</body>
+</html>

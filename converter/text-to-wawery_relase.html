@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ASCII to WaWeRY Converter</title>
+    <style>
+        .container {
+            margin: 50px auto;
+            text-align: center;
+        }
+        input {
+            padding: 5px;
+        }
+        button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>ASCII to WaWeRY Converter</h2>
+        <input type="text" id="asciiInput" placeholder="ASCII Code">
+        <button onclick="convertToCustom()">Convert</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function convertToCustom() {
+            const asciiInput = document.getElementById("asciiInput").value;
+            const customChars = {
+                "Null": "1100",   
+                "SOH": "1101",    
+                "STX": "1102",
+                "ETX": "1103",
+                "BS": "1110",
+                "CAN": "1111",
+                "SUB": "1112",
+                "ESC": "1113",
+                "DEL": "1120",
+                " ": "1133",     //space
+                "!": "1121",
+                "scrawl": "1122", // "
+                "#": "1123",
+                "$": "1130",
+                "%": "1131",
+                "&": "1132",
+                "'": "1133",
+                "(": "1200",
+                ")": "1201",
+                "*": "1202",
+                "+": "1203",
+                ",": "1210",
+                "-": "1211",
+                ".": "1212",
+                "/": "1213",
+                "0": "0000",
+                "1": "0001",
+                "2": "0002",
+                "3": "0003",
+                "4": "0010",
+                "5": "0011",
+                "6": "0012",
+                "7": "0013",
+                "8": "0020",
+                "9": "0021",
+                ":": "0022",
+                ";": "0023",
+                "<": "0030",
+                "=": "0031",
+                ">": "0032",
+                "?": "0033",
+                "@": "0100",
+                "A": "0101",
+                "B": "0102",
+                "C": "0103",
+                "D": "0110",
+                "E": "0111",
+                "F": "0112",
+                "G": "0113",
+                "H": "0120",
+                "I": "0121",
+                "J": "0222",
+                "K": "0223",
+                "L": "0230",
+                "M": "0231",
+                "N": "0232",
+                "O": "0233",
+                "P": "0300",
+                "Q": "0301",
+                "R": "0302",
+                "S": "0303",
+                "T": "0310",
+                "U": "0311",
+                "V": "0312",
+                "W": "0313",
+                "X": "0320",
+                "Y": "0321",
+                "Z": "0322",
+                "[": "0323",
+                "backslash": "0330", // \
+                "]": "0331",
+                "^": "0332",
+                "_": "0333",
+                "`": "1000",
+                "a": "1001",
+                "b": "1002",
+                "c": "1003",
+                "d": "1010",
+                "e": "1011",
+                "f": "1012",
+                "g": "1013",
+                "h": "1020",
+                "i": "1021",
+                "j": "1022",
+                "k": "1023",
+                "l": "1030",
+                "m": "1031",
+                "n": "1032",
+                "o": "1033",
+                "p": "1100",
+                "q": "1101",
+                "r": "1102",
+                "s": "1103",
+                "t": "1110",
+                "u": "1111",
+                "v": "1112",
+                "w": "1113",
+                "x": "1120",
+                "y": "1121",
+                "z": "1122",
+                "{": "1123",
+                "|": "1130",
+                "}": "1131",
+                "~": "1132"
+                // Add more mappings here as needed
+            };
+
+            const customChar = customChars[asciiInput];
+            document.getElementById("result").innerText = "Result: " + (customChar || "Invalid input");
+        }
+    </script>
+    <footer>so if you want to write a \ sign or " sign, then type (\)backslash or (")scrawl
+        <br>and you cannot convert multiple characters to WaWeRY at once</br>
+    </footer>
+</body>
+</html>
