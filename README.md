@@ -21,7 +21,7 @@
 | 3.3.0-relase| :white_check_mark: |  :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | 3.1.1-relase| :white_check_mark: |  :white_check_mark: | :white_check_mark: |        :x:         |
 | 3.0.2-relase| :white_check_mark: |  :white_check_mark: |         :x:        |        :x:         |
-| 3.0.0-1-beta| :x                 |        :x:          |         :x:        |        :x:         |
+| 3.0.0-1-beta| :x:                 |        :x:          |         :x:        |        :x:         |
 | v2.x-beta   |        :x:         |        :x:          |         :x:        |        :x:         |
 | 2.0-beta    |        :x:         |        :x:          |         :x:        |        :x:         |
 | 1.1-alpha   |        :x:         |        :x:          |         :x:        |        :x:         |
