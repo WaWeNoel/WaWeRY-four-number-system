@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WaWeRY image encoder</title>
+    <script>
+        function generateImage() {
+            var input = document.getElementById('input').value;
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext('2d');
+            var pixelSize = 1; // Pixel méret
+
+            canvas.width = input.length * pixelSize;
+            canvas.height = pixelSize;
+
+            for (var i = 0; i < input.length; i++) {
+                var color = getColor(parseInt(input[i]));
+                context.fillStyle = color;
+                context.fillRect(i * pixelSize, 0, pixelSize, pixelSize);
+            }
+        }
+
+        function getColor(number) {
+            switch (number) {
+                case 0:
+                    return 'black';
+                case 1:
+                    return 'blue';
+                case 2:
+                    return 'red';
+                case 3:
+                    return 'green';
+                default:
+                    return 'black';
+            }
+        }
+
+        function downloadImage() {
+            var canvas = document.getElementById('canvas');
+            var link = document.createElement('a');
+            link.href = canvas.toDataURL();
+            link.download = 'image.png';
+            link.click();
+        }
+    </script>
+    <style>
+        #canvas {
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="input" placeholder="WaWeRY numebrs">
+    <button onclick="generateImage()">Encode</button>
+    <br>
+    <canvas id="canvas"></canvas>
+    <button onclick="downloadImage()">Download Image</button>
+</body>
+</html>

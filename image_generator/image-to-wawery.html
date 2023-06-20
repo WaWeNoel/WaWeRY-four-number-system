@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image decoder</title>
+    <script>
+        function decodeImage(event) {
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext('2d');
+            var img = new Image();
+
+            img.onload = function() {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                context.drawImage(img, 0, 0);
+
+                var decodedNumber = '';
+                var pixelSize = 1; // Pixel méret
+
+                for (var i = 0; i < img.width; i += pixelSize) {
+                    var pixelData = context.getImageData(i, 0, pixelSize, pixelSize).data;
+                    var color = getClosestColor(pixelData);
+                    decodedNumber += getColorValue(color);
+                }
+
+                document.getElementById('input').value = decodedNumber;
+            };
+
+            img.src = URL.createObjectURL(event.target.files[0]);
+        }
+
+        function getClosestColor(pixelData) {
+            var colorDistances = [
+                { color: 'black', distance: calculateColorDistance(pixelData, [0, 0, 0, 255]) },
+                { color: 'blue', distance: calculateColorDistance(pixelData, [0, 0, 255, 255]) },
+                { color: 'red', distance: calculateColorDistance(pixelData, [255, 0, 0, 255]) },
+                { color: 'green', distance: calculateColorDistance(pixelData, [0, 128, 0, 255]) }
+            ];
+
+            colorDistances.sort(function(a, b) {
+                return a.distance - b.distance;
+            });
+
+            return colorDistances[0].color;
+        }
+
+        function calculateColorDistance(color1, color2) {
+            var rDiff = color1[0] - color2[0];
+            var gDiff = color1[1] - color2[1];
+            var bDiff = color1[2] - color2[2];
+            var aDiff = color1[3] - color2[3];
+
+            return Math.sqrt((rDiff * rDiff) + (gDiff * gDiff) + (bDiff * bDiff) + (aDiff * aDiff));
+        }
+
+        function getColorValue(color) {
+            switch (color) {
+                case 'black':
+                    return '0';
+                case 'blue':
+                    return '1';
+                case 'red':
+                    return '2';
+                case 'green':
+                    return '3';
+                default:
+                    return '0';
+            }
+        }
+    </script>
+    <style>
+        #canvas {
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" accept="image/png" onchange="decodeImage(event)">
+    <br>
+    <canvas id="canvas"></canvas>
+    <br>
+    <input type="text" id="input" placeholder="Decoded WaWeRY numbers">
+</body>
+</html>
