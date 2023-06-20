@@ -16,7 +16,16 @@
 * the **3** it increases by one in the case of small bug fixes or when nothing major is added to the system
 
 ## Versions:
-
+|   Version   |   Relased system   | Imagerepresentation |      Converter     | Encoder/Decoder    |
+| ----------- | ------------------ | ------------------- | ------------------ | ------------------ |
+| 3.3.0-relase| :white_check_mark: |  :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| 3.1.1-relase| :white_check_mark: |  :white_check_mark: | :white_check_mark: |        :x:         |
+| 3.0.2-relase| :white_check_mark: |  :white_check_mark: |         :x:        |        :x:         |
+| 3.0.0-1-beta| :white_check_mark: |        :x:          |         :x:        |        :x:         |
+| v2.x-beta   |        :x:         |        :x:          |         :x:        |        :x:         |
+| 2.0-beta    |        :x:         |        :x:          |         :x:        |        :x:         |
+| 1.1-alpha   |        :x:         |        :x:          |         :x:        |        :x:         |
+| <1.0-alpha  |        :x:         |        :x:          |         :x:        |        :x:         |
 ### v3.3.0-relase
 #### News:
 - New html image encoder
