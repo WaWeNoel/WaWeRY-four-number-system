@@ -1,6 +1,6 @@
 <!-- Title: -->
-  <a href="https://github.com/TheAlgorithms/">
-    <img src="https://raw.githubusercontent.com/WaWeNoel/WaWeRY-four-number-system/main/images/wawery_logo.png" height="100">
+  <a href="https://github.com/WaWeNoel/">
+    <img src="https://raw.githubusercontent.com/WaWeNoel/WaWeRY-four-number-system/main/images/wawery_logo.png" height="1000">
   </a>
  ### About this
 * **Best four number system**
