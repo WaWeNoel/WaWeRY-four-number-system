@@ -1,6 +1,7 @@
-<div align="center">
-  <img src="[images/wawery_logo.png](https://raw.githubusercontent.com/WaWeNoel/WaWeRY-four-number-system/main/images/wawery_logo.png)">
-</div>
+<!-- Title: -->
+  <a href="https://github.com/TheAlgorithms/">
+    <img src="https://raw.githubusercontent.com/WaWeNoel/WaWeRY-four-number-system/main/images/wawery_logo.png" height="100">
+  </a>
  ### About this
 * **Best four number system**
 * The whole system is logical
