@@ -19,11 +19,11 @@
 |   Version   |   Relased system   | Imagerepresentation |      Converter     | Encoder/Decoder    |
 | ----------- | ------------------ | ------------------- | ------------------ | ------------------ |
 | 3.3.0-relase| :x:                |  :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| error  /\                                                                                        |
+| error  ⬆️                                                                                        |
 | 3.1.1-relase| :x:                |  :white_check_mark: | :white_check_mark: |        :x:         |
-| error  /\                                                                                        |
+| error  ⬆️                                                                                        |
 | 3.0.2-relase| :x:                |  :white_check_mark: |         :x:        |        :x:         |
-| error  /\                                                                                        |
+| error  ⬆️                                                                                        |
 | 3.0.0-1-beta| :x:                |        :x:          |         :x:        |        :x:         |
 | v2.x-beta   |        :x:         |        :x:          |         :x:        |        :x:         |
 | 2.0-beta    |        :x:         |        :x:          |         :x:        |        :x:         |
