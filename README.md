@@ -30,6 +30,10 @@
 | 2.0-beta    |        :x:         |        :x:          |         :x:        |        :x:         |
 | 1.1-alpha   |        :x:         |        :x:          |         :x:        |        :x:         |
 | <1.0-alpha  |        :x:         |        :x:          |         :x:        |        :x:         |
+### v4.0.0-relase
+#### News:
+- recreated number system
+- No problem in this
 ### v3.3.0-relase
 #### News:
 - New html image encoder
