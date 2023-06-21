@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="[https://www.tensorflow.org/images/tf_logo_horizontal.png](https://github.com/WaWeNoel/WaWeRY-four-number-system/blob/main/images/wawery_logo.png)">
+  <img src="[images/wawery_logo.png](https://raw.githubusercontent.com/WaWeNoel/WaWeRY-four-number-system/main/images/wawery_logo.png)">
 </div>
  ### About this
 * **Best four number system**
